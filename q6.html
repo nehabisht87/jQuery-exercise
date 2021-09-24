@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp session</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("p").replaceWith($("h1"));
+                });
+            });
+        </script>
+</head>
+    <body>
+        <p>Example paragraph.</p>
+        <button style = "margin: 20px 0px">
+            Click to replace
+        </button>
+        <h1>H1 tag</h1>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple Interest Calculation</title>
+
+        <script>
+            function calculate()
+            {
+                let amount= prompt("Enter the amount");
+                let interest_rate=prompt("Enter the interest rate");
+                let year=prompt("Enter time");
+                document.write("the value is " + (amount*interest_rate*year)/100);
+
+            }
+        </script>
+    </head>
+    <body>
+     <p>Click the following button to calculate the simple interest</p>
+     <form>
+         <input type = "button" value="Click me" onclick="calculate();" />
+     </form>
+    </body>
+</html>
+

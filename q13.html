@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       
+</head>
+    <body>
+        <script>
+            $(document).ready(function(){
+              var highest = null;
+              var hi = 0;
+              $(".panel").each(function(){
+                  var h = $(this).height();
+                  if(h > hi){
+                      hi = h;
+                      highest = $(this);
+                  }
+              });
+              highest.css("background-color","red");
+            });
+            
+        </script>
+        <style>
+            .load{
+                color:blue;
+            }
+        </style>
+    </body>
+    <div>
+        <div class="panel">
+            Line1<br/>
+            Line2
+        </div>
+        <div class="panel">
+            Line1<br/>
+            Line2<br/>
+            Line3<br/>
+            Line4
+        </div>
+        <div class="panel">
+            Line1<br/>
+            Line1 Line2 
+        </div>
+    </div>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+function groupBy(cur){
+    if(cur.age >20 && cur.age <31 ){
+      return cur
+    }
+  }
+    function employee(EmployeeData) {
+    const filtered_Employee = EmployeeData.filter((data)=>data.salary > 5000)
+    const group = EmployeeData.filter(groupBy)
+    const fetch_Employee_Salary = EmployeeData.filter((data)=> {
+    if(data.salary < 1000 && data.age > 20) {
+      data['salary'] = data['salary']+ 5000
+      return data
+    }
+  })
+  console.log("filtered_Employee",filtered_Employee,"group",group,"fetch_Employee_Salary",fetch_Employee_Salary); //
+  }
+  const data = [
+    {
+      name:"Anuj",
+    age:21,
+    salary:20010,
+    dob:"21/10/2001"
+    },
+    {
+      name:"Akash ",
+    age:21,
+    salary:999,
+    dob:"21/10/2001"
+    },
+    {
+      name:"Ramesh",
+    age:31,
+    salary:4010,
+    dob:"21/10/1998"
+    },
+    {
+      name:"Alok",
+    age:41,
+    salary:5010,
+    dob:"23/08/1998"
+    },
+    {
+      name:"Supriya",
+    age:51,
+    salary:2010,
+    dob:"21/10/2001"
+    },
+    {
+        name:"Kunal",
+      age:51,
+      salary:500,
+      dob:"21/10/2001"
+      },
+  ]
+  employee(data)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

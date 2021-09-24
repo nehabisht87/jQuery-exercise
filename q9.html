@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       
+</head>
+    <body>
+        <script>
+            $(document).ready(function(){
+                $('#op').change(function(){$('h2').append($("#op").val())
+            });
+            });
+            
+        </script>
+        <style>
+            .load{
+                color:blue;
+            }
+            #op{
+                color:white;
+                font-weight: 500;
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+                background-color: #009E60;
+            }
+        </style>
+    </body>
+    <h2>
+        <div class="operating-dropdown">
+            <select id="op" name="Operating system">
+                <option class="text-color" value="Ubuntu">Ubuntu</option>
+                <option class="text-color" value="MAC">MAC</option>
+                <option class="text-color" value="Windows">Windows</option>
+
+            </select>
+        </div>
+    </h2>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".button").hover(function(){
+                    $(".dropdown").slideToggle();
+                });
+            });
+        </script>
+        <style>
+            .load{
+                color:blue;
+            }
+            .dropdown{
+                display:none;
+            }
+        </style>
+</head>
+    <body>
+        <div class ="button">
+            <button value="Hover on me!" id="hover">Hover on me
+            </button>
+        </div>
+        <div class="dropdown">
+            <ul>
+                <li><a href="#">JavaScript Page</a></li>
+                <li><a href="#">HTML Page</a></li>
+                <li><a href="#">CSS Page</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
